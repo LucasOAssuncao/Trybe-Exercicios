@@ -1,0 +1,252 @@
+    1  sudo apt update && sudo apt upgrade
+    2  sudo apt install gufw
+    3  sudo dpkg --configure -a; sudo apt install -f; mkdir ~/Downloads/chrome; cd ~/Downloads/chrome && wget -c encurtador.com.br/efkuS && sudo dpkg -i efkuS; sudo apt install -f; rm -d -r ~/Downloads/chrome 
+    4  sudo apt update
+    5  clear
+    6  sudo dpkg -i code_1.64.0-1643863948_amd64.deb
+    7  clear
+    8  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    9  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+   10  nvm install lts/*
+   11  clear
+   12  nvm install 6
+   13  source ~/.bashrc
+   14  nvm
+   15  nvm install 6
+   16  node -v
+   17  npc -v
+   18  npm -v
+   19  nvm list
+   20  nvm install 14
+   21  nvm -v
+   22  node -v
+   23  npm -v
+   24  cd unix_tests
+   25  rmdir backup
+   26  mv backup2 backup
+   27  ls
+   28  rmdir backup
+   29  clear
+   30  cd
+   31  cat skills.txt
+   32  ls
+   33  cd 'Área de Trabalho'
+   34  head skills.txt
+   35  head wc 5 skills.txt
+   36  wx skills.txt
+   37  wc skills.txt
+   38  tail skills.txt
+   39  headlin5 skills.txt
+   40  head lin5 skills.txt
+   41  head skill.txt.lin5
+   42  head skill.txt/lin5
+   43  rm .txt
+   44  rm apropos'.txt' 
+   45  rm apropos '.txt' 
+   46  rm apropos '.txt'
+   47  rm skills.txt
+   48  clear
+   49  xd
+   50  cd
+   51  clear
+   52  cd unix_tests
+   53  curl 
+   54  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+   55  sudo snap install curl  # version 7.81.0
+   56  clear
+   57  curl 
+   58  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+   59  cat countries.txt grep 'zambia'
+   60  cat countries.txt grep 'Zambia'
+   61  clear
+   62  cat countries.txt grep 'Zambia'
+   63  less countries.txt grep 'Zambia'
+   64  grep 'Zambia' countries.txt
+   65  grep 'Zambia' countries.txt cat
+   66  cat grep 'Zambia' countries.txt
+   67  grep 'Brazil' countries.txt
+   68  grep 'brazil' countries.txt
+   69  cd
+   70  clear
+   71  cd 'Área de Trabalho'
+   72  touch phrases.txt
+   73  grep 'fox' phrases.txt
+   74  wc phrases.txt
+   75  touch empty.tbt
+   76  touch empty.pdf
+   77  man ls
+   78  whatis ls
+   79  ls
+   80  ls '.txt'
+   81  grep '.txt'
+   82  grep '.txt'Área de Trabalho
+   83  grep '.txt''Área de Trabalho'
+   84  # apt-get install git
+   85  curl apt-get install git
+   86  clear
+   87  pwd
+   88  ls
+   89  ls -a
+   90  clear
+   91  ls
+   92  cd 'Área de trabalho'
+   93  cd
+   94  cd Documentos
+   95  cd
+   96  cd 'Área de Trabalho'
+   97  ls
+   98  cd Atividades Trybe
+   99  cd 'Atividades Trybe'
+  100  ls
+  101  cd 'Bloco-1'
+  102  ls
+  103  cd 'Unix&Bash'
+  104  ls
+  105  mkdir unix_tests
+  106  ls
+  107  cd unix_tests/
+  108  curl 
+  109  curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  110  ls
+  111  clear
+  112  cat countries.txt
+  113  clear
+  114  cat -grep 'Zambia' countries.txt
+  115  cat grep 'Zambia' countries.txt
+  116  cat -'Zambia' countries.txt
+  117  cat -Za* countries.txt
+  118  cat countries.txt grep 'Zambia'
+  119  cat countries.txt grep 'Zambia'countries.txt
+  120  cat countries.txt grep 'Zambia' countries.txt
+  121  less countries.txt
+  122  less countries.txt
+  123  grep 'Brazil' countries.txt
+  124  touch phrases.txt
+  125  ls
+  126  wc countries.txt
+  127  wc phrases.txt
+  128  touch empty.tbt empty.txt
+  129  ls
+  130  ls *.txt 
+  131  ls *.t
+  132  ls *.t?t
+  133  ls *.txt || *.tbt
+  134  ls *.txt && *.tbt
+  135  ls *.txt && ls *.tbt
+  136  man ls
+  137  mkdir 1.3
+  138  file countries.txt
+  139  cd Unix&Bash
+  140  cd 'Área de Trabalho'/Atividades Trybe
+  141  cd 'Área de Trabalho'/
+  142  cd Atividades\ Trybe/
+  143  cd Unix&Bash
+  144  cd Bloco-1/
+  145  cd Unix\&Bash/
+  146  cd 1.3/
+  147  cd unix_tests/
+  148  file countries.txt
+  149  mkdir Soft Skills
+  150  touch +comandos.txt
+  151  cat > +comandos.txt 
+  152  clear
+  153  cd
+  154  ls -l
+  155  clear
+  156  cat > comandos-permissão
+  157  cat > comando-Find
+  158  clear
+  159  echo > comando-Echo
+  160  echo 
+  161  echo "Este é um teste"
+  162  # Resultado
+  163  Este é um teste
+  164  # Pode ser usado para colocar textos dentro de arquivos.
+  165  echo "Este é mais um teste" > teste.txt
+  166  cat teste.txt
+  167  Este é mais um testeclear
+  168  clear
+  169  cat > Comando-Echo
+  170  cat
+  171  clear
+  172  ps
+  173  jobs
+  174  find . -type d
+  175  clear
+  176  find . -name *.txt
+  177  clear
+  178  find . -name "*.txt"
+  179  clear
+  180  find . -type f
+  181  clear
+  182  ls la
+  183  ls -la
+  184  who
+  185  ps
+  186  whatis && clear
+  187  who
+  188  head 5 Comando-Echo 
+  189  head -5 Comando-Echo 
+  190  cd Comando-Echo
+  191  clear
+  192  head Comando-Echo 
+  193  heado -5 Comando-Echo 
+  194  head -5 Comando-Echo 
+  195  head 5 Comando-Echo 
+  196  cd ../
+  197  ps
+  198  ../
+  199  sudo apt-get update
+  200  sudo apt-get install git
+  201  git --version
+  202  git config --global user.name "Rafael Rocha" 
+  203  git config --global user.name "Lucas Otoni"
+  204  git config --global user.email "lotoni.vivo@gmail.com"
+  205  git --version
+  206  cd unix_tests
+  207  cat > skills2.txt
+  208  ls -l
+  209  cat skills2.txt
+  210  cat >> skills2.txt
+  211  cat skills2.txt
+  212  wc skills2.txt
+  213  cat skills2.txt | sort | head -3 > top_skills.txt
+  214  cat > phrases2.txt
+  215  grep '*br*' phrases2.txt
+  216  grep '*br*' phrases2.txt | wc
+  217  grep '*-br*' phrases2.txt | wc
+  218  grep '-*br*' phrases2.txt | wc
+  219  grep -'*br*' phrases2.txt | wc
+  220  grep -v '*br*' phrases2.txt | wc
+  221  cat >> phrases2.txt
+  222  cat phrases2.txt countries.txt > bunch_of_things.txt
+  223  sort > bunch_of_things.txt
+  224  sort bunch_of_things.txt
+  225  cat phrases2.txt countries.txt > bunch_of_things.txt
+  226  cat bunch_of_things.txt 
+  227  sort bunch_of_things.txt 
+  228  sort -c bunch_of_things.txt 
+  229  sot bunch_of_things.txt 
+  230  sort bunch_of_things.txt 
+  231  cat | history > '1.4parte1'
+  232  sleep 30 &
+  233  jobs
+  234  kill %1
+  235  jobs
+  236  sleep 30
+  237  bg %1
+  238  jobs
+  239  sleep 300 &
+  240  sleep 200
+  241  sleep 100
+  242  jobs
+  243  fg %2
+  244  jobs
+  245  bg %4
+  246  kill %a
+  247  kill %1 2 3
+  248  Kill %2 %3 %4
+  249  kill %3
+  250  kill %2
+  251  jobs
+  252  cat | history > '1.4Parte3'
