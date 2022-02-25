@@ -1,0 +1,12 @@
+div:hover{
+    border: 2px solid black;
+}
+div:first-of-type{
+    background-color: blue;
+}
+div:last-of-type{
+    background-color: lightblue;
+}
+div:{
+    background-color: black;
+}
