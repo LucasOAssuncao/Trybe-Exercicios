@@ -7,6 +7,20 @@ div:first-of-type{
 div:last-of-type{
     background-color: lightblue;
 }
-div:{
-    background-color: black;
+div:nth-child(4){
+    background-color: orange;
+}
+div:nth-child(5){
+    background-color: gold;
+    padding: 30px;
+}
+div:nth-child(6){
+    background-color: saddlebrown;
+}
+h3{
+    letter-spacing: 5px;
+}
+h3:nth-child(odd){
+    text-decoration: italic;
+    font-size: 40px;
 }
