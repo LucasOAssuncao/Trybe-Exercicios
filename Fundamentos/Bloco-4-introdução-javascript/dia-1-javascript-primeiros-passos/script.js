@@ -28,3 +28,13 @@
 // } else{
 //     console.log(b)
 // }
+
+//PROGRAMA 3
+
+const a = 20;
+const b = 30;
+const c = 40;
+
+if (a > b && a > c){
+    console.log(a)
+} else if
