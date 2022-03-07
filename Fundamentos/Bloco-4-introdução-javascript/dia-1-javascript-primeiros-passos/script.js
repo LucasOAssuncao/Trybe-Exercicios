@@ -55,3 +55,18 @@
 //     console.log("Zero")
 // }
 
+//PROGRAMA 5
+
+// const a = 60;
+// const b = 60;
+// const c = 60;
+// const somaDosAngulos = a + b + c;
+// switch(somaDosAngulos){
+//     case 180:
+//         console.log(true)
+//         break;
+    
+//     default:
+//         console.log(false)
+//         break;
+// }
