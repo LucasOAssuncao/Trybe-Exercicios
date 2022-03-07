@@ -1,3 +1,5 @@
+// PROGRAMA 1
+
 // const a = 10;
 // const b = 3;
 
@@ -15,3 +17,14 @@
 
 // const modulo = (a % b);
 // console.log(modulo);
+
+//PROGRAMA 2
+
+// const a = 20;
+// const b = 10;
+
+// if (a > b){
+//     console.log(a)
+// } else{
+//     console.log(b)
+// }
