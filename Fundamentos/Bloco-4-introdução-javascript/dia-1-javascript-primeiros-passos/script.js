@@ -103,3 +103,18 @@
 // } else if (nota < 0 || nota > 100){
 //     console.log('Erro');
 // }
+
+//PROGRAMA 8
+
+// const a = 7;
+// const b = 4;
+// const c = 1;
+
+// let d = false;
+
+// if(a % 2 === 0 || b % 2 === 0 || c % 2 === 0){
+//     d = true;
+//     console.log(d)
+// } else{
+//     console.log(d);
+// }
