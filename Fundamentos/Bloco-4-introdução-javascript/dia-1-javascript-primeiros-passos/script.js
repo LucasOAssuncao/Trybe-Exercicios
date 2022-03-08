@@ -70,3 +70,17 @@
 //         console.log(false)
 //         break;
 // }
+
+//PROGRAMA 6
+
+// let peca = "bispo";
+
+// if (peca === "bispo".toUpperCase()){
+//     console.log("diagonais");
+// } else if (peca === "BISPO".toLowerCase()){
+//     console.log("diagonais")
+// } else {
+//     console.log("ERRO")
+// }
+
+//PROGRAMA 7
