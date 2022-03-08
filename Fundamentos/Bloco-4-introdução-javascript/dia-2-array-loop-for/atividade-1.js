@@ -41,3 +41,42 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // } else {
 //   console.log("valor menor que 20");
 // }
+
+//EXERCICIO 5
+
+// let maiorNumero = numbers[0];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] > maiorNumero){
+//     maiorNumero = numbers[i];
+//   }
+// }
+
+// console.log(maiorNumero);
+
+//EXERCICIO 6
+
+// let pares = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 !== 0) {
+//     pares++;
+//   }
+// }
+
+// if (pares === 0) {
+//   console.log("Não tem numero impar");
+// } else {
+//   console.log(pares);
+// }
+
+//EXERCICIO 7
+
+let menorNumero = numbers[0];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] < menorNumero){
+    menorNumero = numbers[i];
+  }
+}
+console.log(menorNumero);
