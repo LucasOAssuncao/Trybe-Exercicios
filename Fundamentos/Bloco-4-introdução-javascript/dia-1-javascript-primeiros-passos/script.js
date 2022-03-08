@@ -63,11 +63,11 @@
 // const somaDosAngulos = a + b + c;
 // switch(somaDosAngulos){
 //     case 180:
-//         console.log(true)
+//         console.log(true);
 //         break;
     
 //     default:
-//         console.log(false)
+//         console.log(false);
 //         break;
 // }
 
@@ -75,12 +75,31 @@
 
 // let peca = "bispo";
 
-// if (peca === "bispo".toUpperCase()){
-//     console.log("diagonais");
-// } else if (peca === "BISPO".toLowerCase()){
-//     console.log("diagonais")
-// } else {
-//     console.log("ERRO")
-// }
+// switch (peca.toLowerCase()) {
+//     case 'bispo': console.log('diagonal');
+//     break;
+
+// default:
+//     console.log('Erro');
+//     break;
+// } 
 
 //PROGRAMA 7
+
+// let nota = 100;
+
+// if (nota >= 90 && nota <= 100){
+//     console.log("A");
+// } else if (nota >= 80 && nota <= 90){
+//     console.log('B');
+// } else if (nota >= 70 && nota <=80){
+//     console.log('C');
+// } else if (nota >= 60 && nota <=70){
+//     console.log('D');
+// } else if (nota >= 50 && nota <=60){
+//     console.log('E');
+// } else if (nota < 50 && nota >= 0){
+//     console.log('F');
+// } else if (nota < 0 || nota > 100){
+//     console.log('Erro');
+// }
