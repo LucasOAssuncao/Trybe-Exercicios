@@ -1,7 +1,10 @@
-function verificaPalindrome(palavra){
-    for (index in palavra){
-        if (palavra[index] !== palavra[(palavra.length - 1) - index]){
-
-        }
+function verificaPalindrome(word){
+    for(index in word){
+      if(word[index] != word[(word.length - 1) - index]){
+        return false;
+      }
     }
-}
+    return true;
+  }
+// console.log(verificaPalindrome('arara')); //true
+// console.log(verificaPalindrome('desenvolvimento')); //false
