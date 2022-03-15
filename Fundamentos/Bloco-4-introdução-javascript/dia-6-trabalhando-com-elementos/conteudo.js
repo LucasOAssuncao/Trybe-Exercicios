@@ -23,17 +23,31 @@ document.querySelector("#pai").appendChild(irmao)
 let filho = document.createElement('section');
 filho.innerText = 'lul';
 document.querySelector("#elementoOndeVoceEsta").appendChild(filho);
-console.log(document.querySelector("#elementoOndeVoceEsta").children)
+
 
 // Crie um filho para primeiroFilhoDoFilho .
 
 let filhoDois = document.createElement('section');
 filhoDois.innerText = 'lol';
 document.querySelector("#primeiroFilhoDoFilho").appendChild(filhoDois);
-console.log(document.querySelector("#primeiroFilhoDoFilho").children)
 
 // A partir desse filho criado, acesse terceiroFilho .
 
 let terceiroFilho = filhoDois.parentElement.parentElement.nextElementSibling
 
-console.log(terceiroFilho);
+
+
+let paiDoPai = document.querySelector("#pai");
+
+for (let i = 0; i < paiDoPai.childNodes.length -1; i += 1){
+  let filhos = paiDoPai.childNodes[i];
+
+  if(filhos.id !== 'elementoOndeVoceEsta') {
+    filhos.remove();
+  }
+}
+
+let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+
+console.log(paiDoPai.childNodes)
