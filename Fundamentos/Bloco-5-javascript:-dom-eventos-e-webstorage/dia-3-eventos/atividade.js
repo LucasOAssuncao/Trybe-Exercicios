@@ -64,3 +64,21 @@ criarDiaCalendario();
     container.appendChild(botao);
   }
 criarBotao('Feriados');
+
+function mudarCorFeriado() {
+  let botao = document.querySelector('#btn-holiday');
+  let feriado = document.querySelectorAll('.holiday');
+  let cor = 'rgb(238,238,238)';
+  let novaCor = 'white';
+  
+  botao.addEventListener('click', function(){
+    for (let index = 0; index < feriado.length; index += 1) {
+      if(feriado[index].style.backgroundColor === novaCor) {
+        feriado[index].style.backgroundColor = cor;
+      } else {
+        feriado[index].style.backgroundColor = novaCor;
+      }
+    }
+  })
+};
+mudarCorFeriado();
