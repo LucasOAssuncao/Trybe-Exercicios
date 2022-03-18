@@ -163,3 +163,20 @@ function addTarefa(string) {
     }
     
     selectTask(); 
+
+    function corDaLegendaNoDia() {
+      let days = document.getElementById("days");
+      let taskSelected = document.getElementsByClassName('task selected');
+      let taskColor = document.querySelector('.task').style.backgroundColor;
+      let initialColor = "rgb(119,119,119)";
+      
+      days.addEventListener("click", function (event) {
+      if (taskSelected.length > 0 && event.target.style.color !== taskColor) {
+      event.target.style.color = taskColor;
+      } else {
+      event.target.style.color = initialColor;
+      }
+      });
+      }
+      
+      corDaLegendaNoDia(); 
