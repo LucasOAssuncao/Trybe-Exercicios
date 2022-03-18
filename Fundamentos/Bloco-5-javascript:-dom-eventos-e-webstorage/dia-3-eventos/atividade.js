@@ -82,3 +82,84 @@ function mudarCorFeriado() {
   })
 };
 mudarCorFeriado();
+
+function criarSexta(sextou) {
+  let btn = document.createElement('button');
+  let btnContainer = document.querySelector('.buttons-container');
+  btn.innerText = sextou;
+
+  btn.id = 'btn-friday';
+  btnContainer.appendChild(btn);
+}
+criarSexta("sexta-feira");
+
+function clickSexta() {
+  let getBtnSexta = document.getElementById('btn-friday');
+  getBtnSexta.addEventListener('click', mudarTextoSexta);
+}
+
+clickSexta();
+
+function mudarTextoSexta(){
+  let getFriday = document.querySelectorAll('.friday');
+  let sextas = ['4', '11', '18', '25'];
+
+  for (let index = 0; index < getFriday.length; index += 1){
+    if(getFriday[index].innerText === 'juninho'){
+      getFriday[index].innerText = sextas[index];
+    } else {
+      getFriday[index].innerText = 'juninho'; 
+    }
+  }
+}
+
+function zoomDia(){
+  let dia = document.getElementById('days');
+
+  dia.addEventListener('mouseover', function(event){  
+    event.target.style.fontSize = '30px';
+  });
+}
+zoomDia();
+
+function zoomOutDia(){
+  let dia = document.getElementById('days');
+
+  dia.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = '';
+  })
+}
+zoomOutDia();
+
+function addTarefa(string) {
+  let addSpan = document.createElement('span');
+  let getDiv = document.querySelector('.my-tasks');
+  addSpan.innerText = string + '\n';
+  getDiv.appendChild(addSpan);
+  }
+  
+  addTarefa('Cozinhar'); 
+
+  function addLegenda(string) {
+    let newDiv = document.createElement('div');
+    newDiv.className = 'task';
+    newDiv.style.backgroundColor = string;
+
+    document.querySelector('.my-tasks').appendChild(newDiv);
+  }
+  addLegenda('red');
+
+  function selectTask() {
+    let taskSelected = document.getElementsByClassName('task selected');
+    let task = document.querySelector('.task');
+    
+    task.addEventListener('click', function (event) {
+    if (taskSelected.length === 0) {
+    event.target.classList = 'task selected';
+    } else {
+    event.target.classList = 'task';
+    }
+    })
+    }
+    
+    selectTask(); 
