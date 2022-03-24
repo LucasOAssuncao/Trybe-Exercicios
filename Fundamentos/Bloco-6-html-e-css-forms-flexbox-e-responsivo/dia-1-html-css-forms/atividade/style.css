@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: gray;
   }
 
   body {
@@ -14,6 +15,31 @@
 
   .forms{
       border: solid 3px black;
-      width: 90%;
+      width: 60%;
       margin: 10px 0px 0px 20px;
   }
+
+  .inputs{
+      margin: 10px;
+  }
+
+  .inputs1{
+      margin: 10px 10px 10px 13px;
+  }
+
+  #destinos{
+      margin: 14px;
+      
+  }
+
+  #area-texto{
+      margin: 10px 20px;
+  }
+
+.btn-enviar{
+    padding: 7px 50px;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid black;
+}
+
