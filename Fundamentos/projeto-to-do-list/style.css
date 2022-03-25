@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(201, 229, 245);
+  font-family: monospace;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(56, 56, 56);
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+  background-color: white;
+  padding: 40px 290px 40px 20px;
+  width: 700px;
+  border-radius: 20px;
+  border-bottom: solid 1px black;
+  margin-top: 50px;
+  margin-left: 400px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: dotted 2px rgb(255, 255, 255);
+  background-color: rgb(158, 158, 158);
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  border-bottom: solid 1px rgb(136, 136, 136);
+  background-color: rgb(141, 193, 241);
+  margin-left: 5px;
+}
+
+button:active {
+  background-color: gray;
+}
+
+.corLista {
+  background-color: rgb(128, 128, 128);
+}
+
+.completed {
+  text-decoration: line-through;
+}

@@ -1,0 +1,39 @@
+.color {
+  border: solid 1px black;
+}
+
+.black {
+  background-color: black;
+  padding: 20px;
+  display: inline-block;
+}
+
+.blue {
+  background-color: blue;
+  padding: 20px;
+  display: inline-block;
+}
+
+.yellow {
+  background-color: yellow;
+  padding: 20px;
+  display: inline-block;
+}
+
+.green {
+  background-color: green;
+  padding: 20px;
+  display: inline-block;
+}
+
+.pixel {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border: solid 1px black;
+}
+
+#clear-board {
+  margin-bottom: 5px;
+}
