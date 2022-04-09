@@ -30,27 +30,28 @@
 
 // console.log(checkNumber(aposta(4)));
 
-const arrayRc = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
-const arrayRe = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+// const arrayRc = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+// const arrayRe = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-const compara = (arrayRc, arrayRe) => {
-  if (arrayRc === arrayRe) {
-    return 1;
-  }
-  if (arrayRe === 'N.A') {
-    return 0;
-  } else {
-    return -0.5;
-  }
-};
+// const compara = (arrayRc, arrayRe) => {
+//   if (arrayRc === arrayRe) {
+//     return 1;
+//   }
+//   if (arrayRe === 'N.A') {
+//     return 0;
+//   } else {
+//     return -0.5;
+//   }
+// };
 
-const contador = (arrayRc, arrayRe, callback) => {
-  let total = 0;
-  for (let i = 0; i < arrayRc.length; i += 1) {
-    const call = callback(arrayRc[i], arrayRe[i]);
-    total += call;
-  }
-  return `total de pontos ${total}`;
-}
+// const contador = (arrayRc, arrayRe, callback) => {
+//   let total = 0;
+//   for (let i = 0; i < arrayRc.length; i += 1) {
+//     const call = callback(arrayRc[i], arrayRe[i]);
+//     total += call;
+//   }
+//   return `total de pontos ${total}`;
+// }
 
-console.log(contador(arrayRc, arrayRe, compara));
+// console.log(contador(arrayRc, arrayRe, compara));
+
