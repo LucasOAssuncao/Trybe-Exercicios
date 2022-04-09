@@ -84,6 +84,11 @@ const livroEmOrdem = () => {
     return books.sort((a, b) => b.releaseYear - a.releaseYear);
   }
 
-  const nascimento = () => books.every((Element) => Element.author.birthYear >= 1901 || Element.author.birthYear <= 2000);
+const nascimento = () => books.every((Element) => Element.author.birthYear >= 1901 || Element.author.birthYear <= 2000);
  
-  const anos80 = () => books.some((Element) => Element.releaseYear >= 1980 || Element.author.birthYear < 1990);
+const anos80 = () => books.some((Element) => Element.releaseYear >= 1980 || Element.author.birthYear < 1990);
+
+const mesmoAno = () => {
+  return books.every((book) => !books.some((bookSome) => (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)))
+}
+
