@@ -25,7 +25,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Isaac Asimov',
-      birthYear: 1920,
+      birthYear: 1924,
     },
     releaseYear: 1951,
   },
@@ -92,3 +92,4 @@ const mesmoAno = () => {
   return books.every((book) => !books.some((bookSome) => (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)))
 }
 
+console.log(mesmoAno());

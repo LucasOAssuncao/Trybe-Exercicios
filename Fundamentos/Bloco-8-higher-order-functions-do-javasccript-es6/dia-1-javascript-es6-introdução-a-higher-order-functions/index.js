@@ -16,42 +16,37 @@
 
 // console.log(newEmployees(nomeEmail));
 
-// const aposta = (number) => number;
 
-// const checkNumber = (aposta) => {
-//   const sorteio = Math.floor(Math.random() * 5 + 1);
+// const checkNumber = (aposta) => Math.floor(Math.random() * 5 + 1) === aposta;
 
-//   if (aposta === sorteio) {
-//     return 'Parabéns você ganhou';
-//   } else {
-//     return 'Tente novamente';
-//   }
-// };
-
-// console.log(checkNumber(aposta(4)));
-
-// const arrayRc = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
-// const arrayRe = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
-
-// const compara = (arrayRc, arrayRe) => {
-//   if (arrayRc === arrayRe) {
-//     return 1;
-//   }
-//   if (arrayRe === 'N.A') {
-//     return 0;
-//   } else {
-//     return -0.5;
-//   }
-// };
-
-// const contador = (arrayRc, arrayRe, callback) => {
-//   let total = 0;
-//   for (let i = 0; i < arrayRc.length; i += 1) {
-//     const call = callback(arrayRc[i], arrayRe[i]);
-//     total += call;
-//   }
-//   return `total de pontos ${total}`;
+// const sorteio = (callback ,aposta) => {
+//     return callback(aposta) ? 'Parabéns você ganhou' : 'Tente novamente'
 // }
 
-// console.log(contador(arrayRc, arrayRe, compara));
+// console.log(sorteio(checkNumber, 1));
+
+const arrayRc = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const arrayRe = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const compara = (arrayRc, arrayRe) => {
+  if (arrayRc === arrayRe) {
+    return 1;
+  }
+  if (arrayRe === 'N.A') {
+    return 0;
+  } else {
+    return -0.5;
+  }
+};
+
+const contador = (arrayRc, arrayRe, callback) => {
+  let total = 0;
+  for (let i = 0; i < arrayRc.length; i += 1) {
+    const call = callback(arrayRc[i], arrayRe[i]);
+    total += call;
+  }
+  return `total de pontos ${total}`;
+}
+
+console.log(contador(arrayRc, arrayRe, compara));
 
