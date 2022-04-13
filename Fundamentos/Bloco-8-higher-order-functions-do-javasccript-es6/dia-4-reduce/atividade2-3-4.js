@@ -62,12 +62,16 @@ const books = [
 ];
 
 const ex2 = () =>
-  books.reduce((acc, book) => {
+  books.reduce((acc, book, i, array) => {
+    if(i === array.length - 1){
+      acc += book.author.name;
+      return `${acc}. `;
+    }
     acc += book.author.name;
     return `${acc}, `;
   }, '');
 
-//   console.log(ex2());
+  console.log(ex2());
 
 const ex3 = () => {
   const soma = books.reduce((acc, book) => {
