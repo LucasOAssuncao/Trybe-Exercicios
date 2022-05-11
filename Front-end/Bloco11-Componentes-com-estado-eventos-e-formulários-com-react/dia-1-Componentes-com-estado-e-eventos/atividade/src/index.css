@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://wallpaperaccess.com/full/20998.jpg');
+  background-attachment: fixed; 
+  /* background-size: cover; */
+  background-position: 50% 25%;
 }
 
 .pokemon {
@@ -21,7 +25,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
   transition: 0.3s ease-in;
-  background-color:rgba(228, 228, 228, 0.5)
+  background-color:rgba(255, 255, 255, 0.9)
 }
 
 .pokemon:hover{
@@ -35,20 +39,13 @@ body {
   margin: 10px 10px;
 }
 
-.fire{
-  background-color: rgb(236, 20, 20);
-}
-
-.bug{
-  background-color: rgb(15, 205, 15);
-}
-
 button{
   box-shadow: rgba(0, 0, 0, 0.30) 1.95px 1.95px 2.6px;  border: none;
   margin-left: 10px;
   border-radius: 8px;
   padding: 10px 20px;
   cursor: pointer;
+  background-color:rgba(197, 217, 107, 0.9);
 }
 
 button:active {
