@@ -52,6 +52,7 @@ it('mock para retornar três strings concatenadas', () => {
   expect(functionThree('tico', 'tuco', 'taco')).toEqual('ticotucotaco');
 });
 it('restaura a primeira função', () => {
+  functionOne = jest.fn().mockImplementation((a) => a.toUpperCase());
   expect(functionOne('tico')).toEqual('TICO');
 });
 });
