@@ -34,8 +34,18 @@
         <button id="next">Next color</button>
     </div>
     <script>
+
         const previousButton = document.getElementById('previous');
         const nextButton = document.getElementById('next');
+        function criarCor() {
+            const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+            let cor = '#';
+            const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+            for (let i = 0; i < 6; i += 1) {
+                cor += oneChar[aleatorio()];
+            }
+            return cor;
+        }
 
         const INITIAL_STATE = {
             colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
@@ -55,6 +65,12 @@
                         index:
                             state.index === 0 ? state.colors.length - 1 : state.index - 1,
                     };
+                case 'ADD_COLOR':
+                    return {
+                        ...state,
+                        colors: [...state.colors, action.newColor],
+                        index: state.colors.length - 1,
+                    }
                 default:
                     return state;
             }
@@ -63,10 +79,23 @@
         const store = Redux.createStore(reducer);
         console.log(previousButton);
 
-        previousButton.addEventListener('click', () => store.dispatch({type:'NEXT_COLOR'}));
-        nextButton.addEventListener('click', () => store.dispatch({type:'PREVIOUS_COLOR'}));
+        previousButton.addEventListener('click', () => store.dispatch({ type: 'NEXT_COLOR' }));
+        nextButton.addEventListener('click', () => store.dispatch({ type: 'PREVIOUS_COLOR' }));
 
-        console.log(store.getState());
+        store.subscribe(() => {
+            const { colors, index } = store.getState();
+            document.getElementById('value').innerHTML = colors[index];
+            document.getElementById('container').style.backgroundColor = colors[index];
+        })
+
+        const randomButton = document.createElement('button');
+        randomButton.innerText = 'Random Button';
+        randomButton.addEventListener('click', () => {
+            store.dispatch({ type: 'ADD_COLOR', newColor: criarCor() });
+        });
+
+        document.getElementById('container').appendChild(randomButton);
+
     </script>
 </body>
 
