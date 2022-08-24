@@ -21,7 +21,7 @@ app.get('/chocolates/search', async (req, res) => {
 
 app.put('/chocolates/:id', async (req, res) => {
   const { id } = req.params;
-  const { name, brandId } = req.body;
+  const { name, brandId } = req.query;
   const updatedChocolate = await cacaoTrybe.updateChocolate(Number(id), {
     name,
     brandId,

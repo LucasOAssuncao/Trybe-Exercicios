@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests/integration --exit"
+    "test": "mocha ./tests/integration --exit",
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",

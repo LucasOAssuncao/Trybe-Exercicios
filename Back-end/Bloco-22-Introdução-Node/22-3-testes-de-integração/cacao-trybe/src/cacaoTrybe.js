@@ -23,8 +23,8 @@ const updateChocolate = async (id, update) => {
         return chocolate;
       });
   
-    await writeCacaoTrybeFile(cacaoTrybe);
-    return { ...chocolateToUpdate, ...update };
+    await fs.writeFile('./files/cacaoTrybeFile.json', JSON.stringify(cacaoTrybe));
+    return { cacaoTrybe };
   }
 
   return false;
