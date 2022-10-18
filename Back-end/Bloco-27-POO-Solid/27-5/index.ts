@@ -1,0 +1,23 @@
+import CepService from './CepService';
+import MockCepApi from './MockCepAPI';
+import Car from './Car';
+
+async function main() {
+  const cepSvc = new CepService(new MockCepApi());
+  const test= new Car();
+
+  console.log(
+    'get address by cep',
+    '->',
+    await cepSvc.addressByCep('xx.xxx-xx', 10),
+  );
+  console.log(
+    'get cep by address',
+    '->',
+    await cepSvc.cepByAddress('street foo, between bar and baz', 10),
+  );
+
+  test.drive();
+}
+
+main();
