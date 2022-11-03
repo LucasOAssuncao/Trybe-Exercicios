@@ -1,0 +1,3 @@
+db.heroes.find({
+    "aspects.height": { $gt: 180 }
+})
